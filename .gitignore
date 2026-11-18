@@ -1,0 +1,29 @@
+node_modules/
+dist/
+.astro/
+.tools/
+.local-notes/
+.aws/
+.codex/
+.agents/
+test-results/
+playwright-report/
+.env
+.env.*
+!.env.example
+*.log
+__pycache__/
+# Original artwork remains local; only migrated public web images are published.
+YSL_images/
+docs/audit/source/
+docs/audit/raw/
+docs/screenshots/
+site-source.zip
+# Internal development instructions and migration evidence are kept locally.
+AGENTS.md
+docs/
+# Optional local design/audit helpers need private originals or archived inputs.
+scripts/prepare-images.py
+scripts/prepare-hero.py
+scripts/validate-refinement.sh
+scripts/review-release.py
