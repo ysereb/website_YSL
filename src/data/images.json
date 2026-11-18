@@ -1,0 +1,182 @@
+{
+  "/images/proteome-tagging.webp": {
+    "width": 1521,
+    "height": 1138,
+    "variants": [
+      {
+        "path": "/images/proteome-tagging-800.webp",
+        "width": 800,
+        "height": 599,
+        "bytes": 28582
+      }
+    ]
+  },
+  "/images/yevgeniy-serebrenik.webp": {
+    "width": 700,
+    "height": 700,
+    "variants": []
+  },
+  "/images/katherine-larrimore.webp": {
+    "width": 330,
+    "height": 384,
+    "variants": []
+  },
+  "/images/rahul-saxena.webp": {
+    "width": 700,
+    "height": 740,
+    "variants": []
+  },
+  "/images/dominick-spera.webp": {
+    "width": 700,
+    "height": 700,
+    "variants": []
+  },
+  "/images/sushmitha-kalakuntla.webp": {
+    "width": 700,
+    "height": 933,
+    "variants": []
+  },
+  "/images/olivia-norris.webp": {
+    "width": 700,
+    "height": 735,
+    "variants": []
+  },
+  "/images/ahil-tomy.webp": {
+    "width": 529,
+    "height": 517,
+    "variants": []
+  },
+  "/images/photos/rutgers-gardens-1.webp": {
+    "width": 1600,
+    "height": 1200,
+    "variants": [
+      {
+        "path": "/images/photos/rutgers-gardens-1-800.webp",
+        "width": 800,
+        "height": 600,
+        "bytes": 173188
+      }
+    ]
+  },
+  "/images/photos/rutgers-gardens-2.webp": {
+    "width": 1600,
+    "height": 1200,
+    "variants": [
+      {
+        "path": "/images/photos/rutgers-gardens-2-800.webp",
+        "width": 800,
+        "height": 600,
+        "bytes": 137714
+      }
+    ]
+  },
+  "/images/photos/kathy-best-talk.webp": {
+    "width": 1440,
+    "height": 1920,
+    "variants": [
+      {
+        "path": "/images/photos/kathy-best-talk-800.webp",
+        "width": 800,
+        "height": 1067,
+        "bytes": 136902
+      }
+    ]
+  },
+  "/images/photos/holiday-dinner-2025.webp": {
+    "width": 1600,
+    "height": 1200,
+    "variants": [
+      {
+        "path": "/images/photos/holiday-dinner-2025-800.webp",
+        "width": 800,
+        "height": 600,
+        "bytes": 96386
+      }
+    ]
+  },
+  "/images/photos/halloween-2025.webp": {
+    "width": 1600,
+    "height": 1200,
+    "variants": [
+      {
+        "path": "/images/photos/halloween-2025-800.webp",
+        "width": 800,
+        "height": 600,
+        "bytes": 64870
+      }
+    ]
+  },
+  "/images/photos/cheesequake-park-1.webp": {
+    "width": 1600,
+    "height": 1202,
+    "variants": [
+      {
+        "path": "/images/photos/cheesequake-park-1-800.webp",
+        "width": 800,
+        "height": 601,
+        "bytes": 103630
+      }
+    ]
+  },
+  "/images/photos/cheesequake-park-2.webp": {
+    "width": 1600,
+    "height": 1200,
+    "variants": [
+      {
+        "path": "/images/photos/cheesequake-park-2-800.webp",
+        "width": 800,
+        "height": 600,
+        "bytes": 123016
+      }
+    ]
+  },
+  "/images/photos/stand-up-for-science.webp": {
+    "width": 1600,
+    "height": 1200,
+    "variants": [
+      {
+        "path": "/images/photos/stand-up-for-science-800.webp",
+        "width": 800,
+        "height": 600,
+        "bytes": 104682
+      }
+    ]
+  },
+  "/images/photos/holiday-outing-2024.webp": {
+    "width": 1600,
+    "height": 1200,
+    "variants": [
+      {
+        "path": "/images/photos/holiday-outing-2024-800.webp",
+        "width": 800,
+        "height": 600,
+        "bytes": 116774
+      }
+    ]
+  },
+  "/images/rutgers-health.png": {
+    "width": 234,
+    "height": 328,
+    "variants": []
+  },
+  "/images/nia.png": {
+    "width": 225,
+    "height": 225,
+    "variants": []
+  },
+  "/images/contact-map.webp": {
+    "width": 572,
+    "height": 572,
+    "variants": []
+  },
+  "/images/hero-proximity-desktop.webp": {
+    "width": 2400,
+    "height": 780,
+    "variants": []
+  },
+  "/images/hero-proximity-mobile.webp": {
+    "width": 1000,
+    "height": 1000,
+    "variants": []
+  }
+}

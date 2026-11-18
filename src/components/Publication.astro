@@ -1,0 +1,8 @@
+---
+const { entry } = Astro.props;
+const p = entry.data;
+---
+<article class="publication">
+  <div class="publication-year">{p.year}</div>
+  <div><h3><a href={p.url}>{p.title}<span class="external-arrow" aria-hidden="true"> ↗</span></a></h3><p class="authors">{p.authors}</p><p class="journal"><em>{p.journal}</em>, {p.year}<span> · </span><a href={p.url}>DOI: {p.doi}</a></p></div>
+</article>

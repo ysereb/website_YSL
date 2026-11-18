@@ -1,0 +1,8 @@
+---
+import Layout from '../layouts/Layout.astro';
+import { local } from '../lib/urls';
+---
+<Layout title="Welcome" description="Serebrenik Lab at Rutgers University." canonicalPath={local('/')} noindex>
+  <meta slot="head" http-equiv="refresh" content={`0;url=${local('/')}`} />
+  <section class="wrap section-spacing prose"><h1>Welcome to the Serebrenik Lab</h1><p><a href={local('/')}>Continue to our homepage →</a></p></section>
+</Layout>

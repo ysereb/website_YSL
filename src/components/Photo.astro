@@ -1,0 +1,13 @@
+---
+import { local } from '../lib/urls';
+import images from '../data/images.json';
+const { src, alt, eager = false, class: className = '', sizes = '(max-width: 700px) 100vw, 50vw' } = Astro.props;
+// Inventory supplies original dimensions; new uploads may also provide their own.
+const metadata = images as Record<string, { width: number; height: number; variants: Array<{path: string; width: number}> }>;
+const item = metadata[src];
+const width = item?.width || Astro.props.width || 1600;
+const height = item?.height || Astro.props.height || 1067;
+const variant = src.replace(/\.(webp|png)$/, '-800.$1');
+const responsive = item?.variants.some((v) => v.path === variant);
+---
+<img class={className} src={local(src)} alt={alt} width={width} height={height} loading={eager ? 'eager' : 'lazy'} decoding="async" fetchpriority={eager ? 'high' : undefined} srcset={responsive ? `${local(variant)} 800w, ${local(src)} ${width}w` : undefined} sizes={responsive ? sizes : undefined} />
