@@ -255,27 +255,6 @@ main:focus {
   color:var(--ink)
 }
 
-.hero-bottom {
-  display:flex;
-  justify-content:space-between;
-  align-items:center;
-  gap:2rem;
-  margin-top:.6rem;
-  padding:1.6rem 0 2rem;
-  border-bottom:1px solid var(--line)
-}
-
-.hero-bottom p {
-  font-size:1.03rem;
-  color:var(--muted);
-  line-height:1.6
-}
-
-.hero-bottom .button {
-  flex-shrink:0;
-  white-space:nowrap
-}
-
 .button {
   display:inline-flex;
   align-items:center;
@@ -305,7 +284,7 @@ main:focus {
   grid-template-columns:1.08fr 1fr;
   gap:6rem;
   align-items:center;
-  padding-top:5.5rem;
+  padding-top:3rem;
   padding-bottom:6rem
 }
 
@@ -329,7 +308,7 @@ main:focus {
 }
 
 .mission-copy h2 {
-  margin:1rem 0 1.8rem
+  margin:0 0 1.8rem
 }
 
 .prose {
@@ -504,19 +483,22 @@ main:focus {
   margin-bottom:6rem
 }
 
-.lab-life-image {
+.image-link {
   display:block;
   overflow:hidden
+}
+
+.image-link img {
+  transition:transform .4s
 }
 
 .lab-life-image img {
   width:100%;
   aspect-ratio:1.45;
-  object-fit:cover;
-  transition:transform .4s
+  object-fit:cover
 }
 
-.lab-life-image:hover img {
+.image-link:hover img,.image-link:focus-visible img {
   transform:scale(1.025)
 }
 
@@ -554,10 +536,6 @@ main:focus {
 .page-heading h1 {
   font-size:clamp(3.2rem,5.6vw,5.3rem);
   margin-top:1rem
-}
-
-.title-dot {
-  color:#ad634e
 }
 
 .page-intro {
@@ -625,6 +603,23 @@ main:focus {
   max-width:750px
 }
 
+.research-figure {
+  max-width:750px;
+  margin-top:2rem
+}
+
+.research-figure img {
+  width:100%;
+  height:auto
+}
+
+.research-figure figcaption {
+  margin-top:.8rem;
+  color:var(--muted);
+  font-size:.85rem;
+  line-height:1.7
+}
+
 .people {
   display:grid;
   grid-template-columns:1fr 1fr;
@@ -671,6 +666,55 @@ main:focus {
 }
 
 .person-copy .prose {
+  font-size:.95rem
+}
+
+.people.has-alumni {
+  padding-bottom:3rem
+}
+
+.alumni {
+  border-top:1px solid var(--line);
+  padding-top:2.5rem;
+  padding-bottom:6rem
+}
+
+.alumni>h2 {
+  font-size:2.4rem;
+  margin-bottom:2rem
+}
+
+.alumni-list {
+  display:grid;
+  gap:2rem
+}
+
+.alumnus {
+  display:grid;
+  grid-template-columns:88px minmax(0,1fr);
+  gap:1.5rem;
+  align-items:start
+}
+
+.alumni-portrait {
+  width:88px;
+  height:88px;
+  object-fit:cover
+}
+
+.alumnus h3 {
+  font-family:var(--serif);
+  font-size:1.5rem;
+  letter-spacing:-.02em
+}
+
+.alumni-role {
+  color:var(--muted);
+  font-size:.85rem;
+  margin-block:.25rem .4rem
+}
+
+.alumnus .prose {
   font-size:.95rem
 }
 
@@ -952,10 +996,6 @@ main:focus {
   display:block
 }
 
-.hero-bottom p {
-  max-width:460px
-}
-
 @media(min-width:1600px) {
   .wrap {
     max-width:1280px
@@ -1074,28 +1114,17 @@ main:focus {
     margin-inline:auto;
     text-wrap:balance
   }
-  .hero-bottom {
-    align-items:center;
-    flex-direction:column;
-    text-align:center;
-    gap:1.2rem;
-    margin-top:0;
-    padding-block:1rem 1.8rem
-  }
-  .hero-bottom p {
-    font-size:.9rem
-  }
   .mission-section {
     grid-template-columns:1fr;
     gap:2.5rem;
-    padding-top:3rem;
+    padding-top:2rem;
     padding-bottom:3.5rem
   }
   .microscopy img {
     aspect-ratio:1.4
   }
   .mission-copy h2 {
-    font-size:2.65rem
+    font-size:clamp(2rem,8.8vw,2.65rem)
   }
   .mission-statements {
     font-size:1.02rem
@@ -1213,6 +1242,29 @@ main:focus {
   }
   .person-copy .prose {
     font-size:.95rem
+  }
+  .people.has-alumni {
+    padding-bottom:2rem
+  }
+  .people.has-alumni>.person:last-child {
+    border-bottom:0;
+    padding-bottom:0
+  }
+  .alumni {
+    padding-top:2rem;
+    padding-bottom:4rem
+  }
+  .alumni>h2 {
+    font-size:2.1rem;
+    margin-bottom:1.5rem
+  }
+  .alumnus {
+    grid-template-columns:72px minmax(0,1fr);
+    gap:1.2rem
+  }
+  .alumni-portrait {
+    width:72px;
+    height:72px
   }
   .photo-albums {
     padding-top:2rem

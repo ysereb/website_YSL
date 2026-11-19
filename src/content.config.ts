@@ -3,14 +3,30 @@ import { glob } from 'astro/loaders';
 
 const pages = defineCollection({
   loader: glob({ pattern: '*.md', base: './content/pages' }),
-  schema: z.object({ title: z.string(), description: z.string(), eyebrow: z.string().optional(), subtitle: z.string().optional(), summary: z.string().optional() }),
+  schema: z.object({
+    title: z.string(), description: z.string(), eyebrow: z.string().optional(), subtitle: z.string().optional(), summary: z.string().optional(),
+    supporters: z.array(z.object({
+      name: z.string(), category: z.string(), image: z.string(), alt: z.string(), url: z.string().url(), linkText: z.string(),
+      width: z.number().int().positive().optional(), height: z.number().int().positive().optional(),
+    })).default([]),
+  }),
 });
 const research = defineCollection({
   loader: glob({ pattern: '*.md', base: './content/research' }),
-  schema: z.object({ title: z.string(), order: z.number(), questions: z.array(z.string()) }),
+  schema: z.object({
+    title: z.string(), order: z.number(), questions: z.array(z.string()),
+    figures: z.array(z.object({
+      src: z.string(), alt: z.string(), caption: z.string().optional(),
+      width: z.number().int().positive().optional(), height: z.number().int().positive().optional(),
+    })).default([]),
+  }),
 });
 const people = defineCollection({
   loader: glob({ pattern: '*.md', base: './content/people' }),
+  schema: z.object({ name: z.string(), role: z.string(), order: z.number(), image: z.string(), alt: z.string() }),
+});
+const alumni = defineCollection({
+  loader: glob({ pattern: '*.md', base: './content/alumni' }),
   schema: z.object({ name: z.string(), role: z.string(), order: z.number(), image: z.string(), alt: z.string() }),
 });
 const publications = defineCollection({
@@ -25,4 +41,4 @@ const news = defineCollection({
   loader: glob({ pattern: '*.md', base: './content/news' }),
   schema: z.object({ title: z.string(), date: z.coerce.date(), draft: z.boolean().default(false) }),
 });
-export const collections = { pages, research, people, publications, photos, news };
+export const collections = { pages, research, people, alumni, publications, photos, news };

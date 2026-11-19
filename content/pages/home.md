@@ -1,7 +1,6 @@
 ---
 title: "Serebrenik Lab"
 subtitle: "Protein Control and Organization"
-summary: "Illuminating protein quality control. Harnessing the power of induced proximity."
 description: "Explore Serebrenik Lab's research on proteome control and organization at Rutgers University."
 eyebrow: "Rutgers University"
 ---

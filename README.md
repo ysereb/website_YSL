@@ -17,6 +17,7 @@ The site is designed to be lightweight, responsive, accessible, and straightforw
 | `content/pages/` | Page text and metadata |
 | `content/research/` | Research projects |
 | `content/people/` | Lab members |
+| `content/alumni/` | Former lab members |
 | `content/publications/` | Publications |
 | `content/photos/` | Photo galleries |
 | `content/news/` | News and announcements |
