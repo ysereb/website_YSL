@@ -131,7 +131,7 @@ test('homepage mission keeps two lines and lab-life uses the responsive Cheesequ
     });
     expect(lineCount, `${width}px mission heading line count`).toBe(2);
     const lifeLink = page.locator('.lab-life-image');
-    await expect(lifeLink).toHaveAttribute('href', route('photos/'));
+    await expect(lifeLink).toHaveAttribute('href', route('team/'));
     const lifeImage = lifeLink.locator('img');
     await expect(lifeImage).toHaveAttribute('src', route('images/photos/cheesequake-park-2.webp'));
     await expect(lifeImage).toHaveAttribute('srcset', `${route('images/photos/cheesequake-park-2-800.webp')} 800w, ${route('images/photos/cheesequake-park-2.webp')} 1600w`);
